@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  mailcow:
+    build:
+      dockerfile: ./docker/mailcow/Dockerfile
+    container_name: mailcow
+    ports:
+      - "3000:80"
+    networks:
+      default:
+        ipv4_address: 10.10.10.1
+
+networks:
+  external:
+    driver: bridge
