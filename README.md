@@ -3,12 +3,12 @@
 - Fail2Ban
 - ufw
 
-# What I need?
+# Services
 
 - MailCow
 - Gitea
 - code-server
-- Caprover
+- Porter
 - SearXNG
 - KDE-in-Docker
 - Docker-Firefox
@@ -18,6 +18,10 @@
 - element + matrix
 - (Video): Sonarr (for series) + Radarr (for movies) + prowlarr + deluge + jellyfin + Emby + jellyseerr (for requests) + qbittorrent (for downloading)
 - (audio): audiobookshelf + Airsonic
+
+# How does it work?
+
+Uses ansible playbook to setup system (a lot of services are in docker but not all).
 
 # Reccomended Urls and what they contain
 
